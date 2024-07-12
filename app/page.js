@@ -20,4 +20,8 @@ function Page() {
   );
 }
 
+<<<<<<< HEAD
 export default Page;
+=======
+export default Page;
+>>>>>>> 43dd5bfe11a75d86a03ff1f6a05976340d6aa2ef

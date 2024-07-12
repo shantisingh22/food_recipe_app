@@ -1,9 +1,11 @@
 import React from 'react';
-import DummyData from './recipeData'; // Ensure this path is correct
+import DummyData from './recipeData'; 
+import Header from './header'
 
 function Page() {
   return (
     <div>
+      <Header />
       <h1>Food Recipe</h1>
       <div>
         {DummyData.map((recipe) => (

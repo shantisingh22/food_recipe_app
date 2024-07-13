@@ -1,6 +1,7 @@
-import React from "react";
+
+import React from 'react';
 import DummyData from './recipeData';
-import "./globals.css";
+import Header from './header'
 
 const FoodList = () => {
   return (
@@ -17,6 +18,7 @@ const FoodList = () => {
     </div>
   );
 };
+  
 
 export default FoodList;
 
@@ -29,28 +31,3 @@ export default FoodList;
 
 
 
-
-
-
-// import React from 'react';
-// import DummyData from './recipeData'; // Ensure this path is correct
-
-// function Page() {
-//   return (
-//     <div>
-//       <h1>Food Recipe</h1>
-//       <div>
-//         {DummyData.map((recipe) => (
-//           <div key={recipe.id}>
-//             <h2>{recipe.name}</h2>
-//             <div className="recipe-image-div">
-//             <img className="recipe-image" src={recipe.image} alt={recipe.name} />
-//             </div>
-//             <p>{recipe.description}</p>
-//           </div>
-//         ))}
-//       </div>
-//     </div>
-//   );
-// }
-// export default Page;

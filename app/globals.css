@@ -1,31 +1,38 @@
 .container {
-  overflow-x: auto;
-  white-space: nowrap;
-}
-
-.food-item {
-  flex: 0 0 auto;
-  width: 150px; /* Adjust as needed */
-  margin: 10px;
-}
-
-.image {
-  width: 100px; /* Adjust as needed */
-  height: 100px; /* Adjust as needed */
-  object-fit: cover;
+  padding: 20px;
 }
 
 .row {
-  position: relative;
+  flex-wrap: nowrap;
 }
 
-.row::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
-  height: 100%;
-  background: linear-gradient(to right, transparent, white);
-  pointer-events: none;
+.food-item {
+  margin-right: 20px;
 }
+
+.image {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+
+.top-images {
+  margin-bottom: 10px;
+}
+
+.card-img-top {
+  height: 100%;
+  width: 100%; 
+  object-fit: cover;
+}
+.image-carousel-container {
+  max-width: 1400px; 
+  margin: auto;
+}
+
+.carousel-image {
+  height: 400px; 
+  object-fit: cover;
+}
+/* styles.css */
+

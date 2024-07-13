@@ -31,9 +31,3 @@ export default FoodList;
 
 
 
-<<<<<<< HEAD
-export default Page;
-
-
-=======
->>>>>>> 3df1be0d201f3323ff7b3a3163beceeaaa7473d9

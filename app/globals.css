@@ -1,12 +1,13 @@
 .container {
-  overflow-x: auto;
-  white-space: nowrap;
+  padding: 20px;
+}
+
+.row {
+  flex-wrap: nowrap;
 }
 
 .food-item {
-  flex: 0 0 auto;
-  width: 150px;
-  margin: 10px;
+  margin-right: 20px;
 }
 
 .image {
@@ -15,17 +16,23 @@
   object-fit: cover;
 }
 
-.row {
-  position: relative;
+.top-images {
+  margin-bottom: 10px;
 }
 
-.row::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  right: 0;
-  width: 40px;
+.card-img-top {
   height: 100%;
-  background: linear-gradient(to right, transparent, white);
-  pointer-events: none;
+  width: 100%; 
+  object-fit: cover;
 }
+.image-carousel-container {
+  max-width: 1400px; 
+  margin: auto;
+}
+
+.carousel-image {
+  height: 400px; 
+  object-fit: cover;
+}
+/* styles.css */
+

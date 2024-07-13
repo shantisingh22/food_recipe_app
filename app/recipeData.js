@@ -1,13 +1,13 @@
 const DummyData = [
   {
     id: 1,
-    name: "Spaghetti Carbonara",
+    name: "Spaghetti",
     image: "pasta sauce.png",
     description: "A classic Italian pasta dish made with eggs, cheese, pancetta, and pepper."
   },
   {
     id: 2,
-    name: "Vegetable Stir Fry",
+    name: "Vegetable Fry",
     image: "Vegetable Stir Fry.jpg",
     description: "A quick and healthy stir fry with a mix of fresh vegetables."
   },
@@ -61,13 +61,13 @@ const DummyData = [
   },
   {
     id: 11,
-    name: "French Onion Soup",
+    name: "French Soup",
     image: "french soup.jpg",
     description: "A warm and comforting French onion soup topped with melted cheese."
   },
   {
     id: 12,
-    name: "Mushroom Risotto",
+    name: "Mushroom",
     image:"masroom.jpg",
     description: "A creamy risotto made with arborio rice and wild mushrooms."
   },

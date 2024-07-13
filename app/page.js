@@ -7,7 +7,6 @@ const FoodList = () => {
   return (
     <div className="container">
       <Header />
-      <h2>What's on your mind?</h2>
       <div className="row flex-row flex-nowrap overflow-auto">
         {DummyData.map((item) => (
           <div className="col-auto food-item text-center" key={item.id}>

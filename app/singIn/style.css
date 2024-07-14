@@ -1,0 +1,51 @@
+body {
+    background-image: url("/background color.jpg");
+    /* background-color: gainsboro; */
+    background-size: cover;
+    background-position: center;
+}
+
+.signin-container {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signin-card {
+    width: 500px;
+    height: 600px;
+    background-color: transparent; 
+    border-radius: 10px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.text-center {
+    margin-bottom: 20px;
+    color:black;
+    font-weight: normal;
+    font-size: 24px;
+}
+
+.submit-btn {
+    background-color: #ff6b6b;
+    color: #ffffff;
+    border-radius: 5px;
+    padding: 10px 0;
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+.submit-btn:hover {
+    background-color: #ff5252;
+    box-shadow: 0 4px 8px black;
+}
+.signup-option p {
+    font-size: 24px;
+    color: black;
+}

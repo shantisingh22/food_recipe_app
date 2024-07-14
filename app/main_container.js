@@ -1,20 +1,22 @@
-import React, { useEffect, useState } from 'react';
+import React, { useState, useEffect } from 'react';
 
 function MainContainer() {
     const [categories, setCategories] = useState([]);
-
-    const fun = useEffect(function () {
+    function fetchRecipeData() {
         fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
-            .then(function (response) {
+            .then(function(response) {
                 return response.json();
             })
-            .then(function (data) {
+            .then(function(data) {
                 setCategories(data.categories.slice(0, 12));
             })
-            .catch(function (error) {
+            .catch(function(error) {
                 console.error('Error fetching the data:', error);
             });
-    }, []);
+    }
+    useEffect(function() {
+        fetchRecipeData();
+    }, []); 
 
     return (
         <div>

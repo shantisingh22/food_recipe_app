@@ -12,8 +12,8 @@ const FoodList = () => {
       <div className="row flex-row flex-nowrap overflow-auto">
         {DummyData.map((item) => (
           <div className="col-auto food-item text-center" key={item.id}>
-            <div className='top-images'>
-              <img src={item.image} alt={item.name} className="image img-fluid rounded-circle" />
+            <div className='top-images image-container'>
+              <img src={item.image} alt={item.name} className="image img-fluid rounded-circle card-img-top hover-image" />
             </div>
             <h5>{item.name}</h5>
           </div>

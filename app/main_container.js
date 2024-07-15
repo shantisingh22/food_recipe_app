@@ -4,19 +4,19 @@ function MainContainer() {
     const [categories, setCategories] = useState([]);
     function fetchRecipeData() {
         fetch('https://www.themealdb.com/api/json/v1/1/categories.php')
-            .then(function(response) {
+            .then(function (response) {
                 return response.json();
             })
-            .then(function(data) {
+            .then(function (data) {
                 setCategories(data.categories.slice(0, 12));
             })
-            .catch(function(error) {
+            .catch(function (error) {
                 console.error('Error fetching the data:', error);
             });
     }
-    useEffect(function() {
+    useEffect(function () {
         fetchRecipeData();
-    }, []); 
+    }, []);
 
     return (
         <div>
@@ -30,7 +30,10 @@ function MainContainer() {
                     return (
                         <div className="col-md-4 col-lg-4 mb-4" key={category.idCategory}>
                             <div className="card h-100">
-                                <img src={category.strCategoryThumb} alt={category.strCategory} className="card-img-top" />
+                                <div className="image-container">
+                                    <img src={category.strCategoryThumb} alt={category.strCategory} className="card-img-top hover-image" />
+                                    <div className="hover-text">Hovered!</div>
+                                </div>
                                 <div className="body text-center">
                                     <h5 className="title">{category.strCategory}</h5>
                                     <p>{truncatedDescription}</p>

@@ -17,10 +17,6 @@ const FoodList = () => {
             <img src={item.image} alt={item.name} className="image img-fluid rounded-circle" />
             </div>
             <h5>{item.name}</h5>
-<<<<<<< HEAD
-=======
-
->>>>>>> 39bdfed8cad73c35d2d5de37014bb3977dde3267
           </div>
         ))}
       </div>

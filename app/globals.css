@@ -33,6 +33,10 @@ body{
 .home_imag{
   flex-wrap: wrap ;
 }
+.home_imag {
+  flex-wrap: wrap;
+}
+
 .container_header {
   display: flex;
   justify-content: space-between;
@@ -44,8 +48,8 @@ body{
 }
 
 .logo_img {
-  width: 50px;
-  height: 50px;
+  width: 80px;  /* Increased size */
+  height: 80px; /* Increased size */
   margin-right: 20px;
 }
 
@@ -61,13 +65,15 @@ body{
   text-decoration: none;
   color: inherit;
   padding: 5px;
+  font-weight: bold;  
 }
 
 .nav_item img {
-  width: 24px;
-  height: 24px;
+  width: 40px;  
+  height: 40px; 
   margin-right: 5px;
 }
+
 
 
 .image-container{

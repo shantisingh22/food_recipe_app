@@ -2,9 +2,8 @@ import React from 'react';
 import './style.css'; 
 
 function SignInForm() {
-    <h1>hello SignInForm</h1>
     return (
-        <div className="signin-container_box d-flex justify-content-center align-items-center">
+        <div className="signin-container d-flex justify-content-center align-items-center">
             <div className="signin-card card p-4">
                 <div className="text-center">SIGN IN</div>
                 <form>

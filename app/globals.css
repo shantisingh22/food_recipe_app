@@ -47,9 +47,10 @@ body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
+  padding: 10px 20px;
   padding-top: 40px;
-  background-color:white;
+  padding-bottom: 40px;
+  background-color: white;
 }
 
 .logo_img {
@@ -63,64 +64,17 @@ body{
   align-items: center;
 }
 
-.searchbaar, .home, .signIn, .Cart {
+.nav_item {
   display: flex;
   align-items: center;
   margin-right: 20px;
+  text-decoration: none;
+  color: inherit;
+  padding: 5px;
 }
 
-.logo1 {
-  margin-right: 10px; /* Adjust as needed */
-}
-
-.search_icon, .icon {
+.nav_item img {
   width: 24px;
   height: 24px;
+  margin-right: 5px;
 }
-
-.nav1 a {
-  margin-left: 10px; /* Adjust as needed */
-  border: solid red 1px;
-  padding: 5px;
-  text-decoration: none;
-  color: inherit;
-  display: flex;
-  align-items: center;
-}
-
-
-
-
-/* .container_header {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 10px;
-  background-color: #f8f9fa;
-}
-.search_icon {
-  border: solid red 1px;
-  width: 30px; 
-  height: 36px;
-  margin-right: -20px;
-  
-}
-.nav1 {
-  display: flex;
-  padding: 5px;
-}
-.nav1 a {
-  margin-left: 20px;
-  border: solid red 1px;
-  padding: 5px;
-  text-decoration: none;
-  color: inherit;
-}
-.form-control {
-  width: 150px;
-}
-.logo_img {
-  border:solid red 1px;
-  width: 50px; 
-  height: 50px; 
-} */

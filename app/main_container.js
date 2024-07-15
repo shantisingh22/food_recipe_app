@@ -21,7 +21,7 @@ function MainContainer() {
     return (
         <div>
             <h2 className="text-center my-3">Restaurants with online food delivery in Bangalore</h2>
-            <div className="row">
+            <div className="row home_imag">
                 {categories.map((category) => {
                     const description = category.strCategoryDescription;
                     const truncatedDescription =

@@ -1,11 +1,10 @@
-body {
+#body {
     background-image: url("/background color.jpg");
-    /* background-color: gainsboro; */
     background-size: cover;
     background-position: center;
 }
 
-.signin-container {
+.signin-container_box {
     height: 100vh;
     display: flex;
     justify-content: center;

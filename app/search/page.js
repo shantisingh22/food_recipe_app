@@ -4,9 +4,11 @@ import ImageCarousel from "./imgeCarousel";
 import "./style.css";
 
 function SearchBar() {
+
     const [recipes, setRecipes] = useState([]);
     const [error, setError] = useState(null);
     const [searchRecipes, setSearchRecipes] = useState("");
+    const [liked, setLiked] = useState(false);
 
     const fetchRecipes = () => {
         fetch(`https://api.edamam.com/search?q=${searchRecipes}&app_id=f0e24019&app_key=b848797de300f8652711b1d7d215ee25&from=0&to=100`)
@@ -32,6 +34,10 @@ function SearchBar() {
         setError(null);
     };
 
+    const handleToggle = () => {
+        setIsActive(!liked);
+      };
+      
     let content;
     if (error) {
         content = <p>Error: {error}</p>;
@@ -46,10 +52,21 @@ function SearchBar() {
                             <img src={recipeItem.recipe.image} alt={recipeItem.recipe.label} className="recipe-image" />
                             <div className="recipe-details">
                                 <h6 className="recipeItem">{recipeItem.recipe.label}</h6>
-                                {/* <p>{recipeItem.recipe.source}</p> */}
                             </div>
                         </div>
-                        <button className="add-button">ADD</button>
+
+                        <button 
+        className={`heart-button ${liked ? 'liked' : ''}`} 
+        onClick={toggleLike}
+        style={{ color: liked ? 'red' : 'white' }}
+      >
+        ❤️
+      </button>
+
+      <button onClick={handleToggle}>
+      {isActive ? 'Active' : 'Inactive'}
+    </button>
+
                     </li>
                 ))}
             </ul>
@@ -58,29 +75,29 @@ function SearchBar() {
 
     return (
         <div className="container">
-        <h1>Recipes <img src="chocolate-cake.png"  style={{ width: "120px", height: "100px" }}/> </h1>
-        <div className="inputBox">
-            <input
-                type="text"
-                placeholder="Search recipes..."
-                className="input_recipe"
-                value={searchRecipes}
-                onChange={(e) => setSearchRecipes(e.target.value)}
-            />
-            {searchRecipes && (
-                <button className="clear-button" onClick={handleSearchClear}>
-                    &times;
+            <h1>Recipes <img src="chocolate-cake.png" style={{ width: "120px", height: "100px" }} /> </h1>
+            <div className="inputBox">
+                <input
+                    type="text"
+                    placeholder="Search recipes..."
+                    className="input_recipe"
+                    value={searchRecipes}
+                    onChange={(e) => setSearchRecipes(e.target.value)}
+                />
+                {searchRecipes && (
+                    <button className="clear-button" onClick={handleSearchClear}>
+                        &times;
+                    </button>
+                )}
+                <button className="search_recipe" onClick={fetchRecipes}>
+                    <img src="search.png" alt="Search" />
                 </button>
-            )}
-            <button className="search_recipe" onClick={fetchRecipes}>
-                <img src="search.png" alt="Search" />
-            </button>
+            </div>
+            <ImageCarousel />
+            {content}
         </div>
-        <ImageCarousel />
-        {content}
-    </div>
-    
-    
+
+
     );
 }
 

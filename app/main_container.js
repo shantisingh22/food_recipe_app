@@ -20,7 +20,6 @@ function MainContainer() {
 
     return (
         <div>
-            <h2 className="text-center my-3">Restaurants with online food delivery in Bangalore</h2>
             <div className="row home_imag">
                 {categories.map((category) => {
                     const description = category.strCategoryDescription;
@@ -32,7 +31,6 @@ function MainContainer() {
                             <div className="card h-100">
                                 <div className="image-container">
                                     <img src={category.strCategoryThumb} alt={category.strCategory} className="card-img-top hover-image" />
-                                    <div className="hover-text">Hovered!</div>
                                 </div>
                                 <div className="body text-center">
                                     <h5 className="title">{category.strCategory}</h5>

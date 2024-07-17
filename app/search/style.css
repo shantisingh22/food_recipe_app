@@ -73,17 +73,29 @@
     display: flex;
     flex-direction: column;
     /* font-size: 10px; */
-}
-
-.add-button {
-    background-color: green;
-    color: white;
+}.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .heart-button {
+    background-color: transparent;
     border: none;
-    padding: 10px 20px;
     cursor: pointer;
-    border-radius: 5px;
-}
-
+    outline: none;
+    font-size: 5rem;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .heart-button.liked {
+    color: red;
+  }
+  
 .add-button:hover {
     background-color: darkgreen;
 }
@@ -92,3 +104,28 @@
     margin-top: 50px;
     margin-bottom: 50px;
 }
+
+
+.App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+  }
+  
+  .heart-button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    font-size: 5rem;
+    color: white;
+    transition: color 0.3s;
+  }
+  
+  .heart-button.liked {
+    color: red;
+  }
+  

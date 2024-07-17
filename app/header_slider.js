@@ -4,7 +4,7 @@ import { Carousel } from 'react-bootstrap';
 function HeaderSlider() {
   return (
     <div className="image-carousel-container">
-        <h2 className="text-center my-3">Top restaurant chains in Bangalore</h2>
+        <h2 className="text-center my-3">Top Recipes</h2>
         <Carousel>
             <Carousel.Item>
             <img className="d-block w-100 carousel-image" src="one.jpg" alt="one slide"/>

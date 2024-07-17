@@ -40,6 +40,7 @@ function Page() {
         setIsLoading(false);
     };
 
+
     let content;
     if (error) {
         content = <p>Error: {error}</p>;

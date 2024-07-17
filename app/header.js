@@ -1,10 +1,10 @@
 import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import './globals.css';
 
 function Header() {
 	return (
-		<div className="container_header">
+		
+		<div className="container container_header">
 			<div className="logo">
 				<img src="caesar salad.png" className="logo_img" alt="Logo" />
 			</div>
@@ -22,14 +22,6 @@ function Header() {
 	);
 }
 export default Header;
-
-
-
-
-
-
-
-
 
 
 

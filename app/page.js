@@ -5,6 +5,7 @@ import DummyData from './recipeData';
 import Header from './header';
 import ImageCarousel from './header_slider';
 import MainContainer from './main_container';
+
 const FoodList = () => {
   return (
     <div className="container">

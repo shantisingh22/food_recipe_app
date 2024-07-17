@@ -8,7 +8,7 @@ function SearchBar() {
     const [recipes, setRecipes] = useState([]);
     const [error, setError] = useState(null);
     const [searchRecipes, setSearchRecipes] = useState("");
-    const [liked, setLiked] = useState(false);
+
 
     const fetchRecipes = () => {
         fetch(`https://api.edamam.com/search?q=${searchRecipes}&app_id=f0e24019&app_key=b848797de300f8652711b1d7d215ee25&from=0&to=100`)
@@ -33,10 +33,6 @@ function SearchBar() {
         setRecipes([]);
         setError(null);
     };
-
-    const handleToggle = () => {
-        setIsActive(!liked);
-      };
       
     let content;
     if (error) {
@@ -55,17 +51,8 @@ function SearchBar() {
                             </div>
                         </div>
 
-                        <button 
-        className={`heart-button ${liked ? 'liked' : ''}`} 
-        onClick={toggleLike}
-        style={{ color: liked ? 'red' : 'white' }}
-      >
-        ❤️
-      </button>
+                      
 
-      <button onClick={handleToggle}>
-      {isActive ? 'Active' : 'Inactive'}
-    </button>
 
                     </li>
                 ))}

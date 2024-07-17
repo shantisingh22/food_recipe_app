@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState} from 'react';
 
 function MainContainer() {
     const [categories, setCategories] = useState([]);
@@ -14,20 +14,18 @@ function MainContainer() {
                 console.error('Error fetching the data:', error);
             });
     }
-    useEffect(function () {
-        fetchRecipeData();
-    }, []);
+    fetchRecipeData();
 
     return (
         <div>
-            <div className="row">
+            <div className="row home_imag">
                 {categories.map((category) => {
                     const description = category.strCategoryDescription;
                     const truncatedDescription =
                         description.split(" ").slice(0, 10).join(" ") + (description.split(" ").length > 20 ? "..." : "");
 
                     return (
-                        <div className="col-md-4 col-lg-4 mb-4" key={category.idCategory}>
+                        <div className="col-md-4 col-lg-4 mb-4 card_container" key={category.idCategory}>
                             <div className="card h-100">
                                 <div className="image-container">
                                     <img src={category.strCategoryThumb} alt={category.strCategory} className="card-img-top hover-image" />
@@ -44,4 +42,5 @@ function MainContainer() {
         </div>
     );
 };
+
 export default MainContainer;

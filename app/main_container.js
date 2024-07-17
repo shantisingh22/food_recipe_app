@@ -20,7 +20,7 @@ function MainContainer() {
 
     return (
         <div>
-            <div className="row home_imag">
+            <div className="row">
                 {categories.map((category) => {
                     const description = category.strCategoryDescription;
                     const truncatedDescription =
@@ -44,5 +44,4 @@ function MainContainer() {
         </div>
     );
 };
-
 export default MainContainer;

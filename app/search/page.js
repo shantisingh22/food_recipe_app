@@ -33,7 +33,7 @@ function SearchBar() {
         setRecipes([]);
         setError(null);
     };
-      
+
     let content;
     if (error) {
         content = <p>Error: {error}</p>;
@@ -51,7 +51,7 @@ function SearchBar() {
                             </div>
                         </div>
 
-                      
+
 
 
                     </li>

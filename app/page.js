@@ -20,7 +20,6 @@
 // export default Page;
 
 
-// Page.js
 "use client"
 import React, { useState } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';

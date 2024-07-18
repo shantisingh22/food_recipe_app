@@ -17,7 +17,3 @@ const Foodlist = () => {
 }
 export default Foodlist;
 
-
-
-
-

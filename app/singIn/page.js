@@ -31,7 +31,6 @@
 // export default SignInForm;
 
 
-// SignInForm.js
 import React from 'react';
 import './style.css';
 

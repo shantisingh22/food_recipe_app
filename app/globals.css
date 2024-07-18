@@ -1,26 +1,26 @@
 body {
 	background: whitesmoke;
+	margin:0px;
 }
 
-
-/* Header*/
 .container_header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	padding: 10px 20px;
-	 width:1400px; 
-	background-color: #f8f9fa; 
-} 
-
-.logo {
-	display: flex;
-	align-items: center;
+	padding-top: 30px;
+	padding-bottom: 30px;
+	background-color: white;
 }
 
 .logo_img {
-	width: 50px;
-	height: 50px;
+	width: 80px;
+	height: 80px;
+	margin-right: 20px;
+}
+
+.text-center {
+	margin-top: 40px;
 }
 
 .nav1 {
@@ -31,29 +31,20 @@ body {
 .nav_item {
 	display: flex;
 	align-items: center;
-	margin-left: 20px;
+	margin-right: 20px;
 	text-decoration: none;
-	color: #000;
+	color: inherit;
+	width:170px;
+	font-weight: bold;
 }
 
 .nav_item img {
-	width: 20px;
-	height: 20px;
+	width: 40px;
+	height: 40px;
 	margin-right: 5px;
 }
 
-.nav_item:hover {
-	text-decoration: underline;
-}
-
 /*  dummydata css use*/
-
-.app-container {
-	padding: 20px;
-	max-width: 1600px;
-	margin: 0 auto;
-}
-  
 
 .food-list-row {
 	display: flex;
@@ -67,12 +58,13 @@ body {
 	text-align: center;
 }
 
-.image-container {
+.image-container_1 {
 	position: relative;
-	width: 150px;
+	width: 150px;;
 	height: 150px;
 	margin: 0 auto;
 }
+
 
 .food-image {
 	width: 100%;
@@ -100,7 +92,6 @@ body {
 	padding: 20px;
 	background-color: #f0f0f0;
 	border-radius: 8px;
-	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .carousel-image {
@@ -109,24 +100,70 @@ body {
 	object-fit: cover;
 	width: 100%;
 }
-
-.text-center {
-	text-align: center;
-	margin-top: 50;
-	margin-bottom: 50;
+.container {
+	/* padding: 20px; */
+	padding-top: 0px;
 }
 
+.row {
+	flex-wrap: nowrap;
+}
 
+.top-images {
+	margin-bottom: 10px;
+}
 
+.card-img-top {
+	height: 100%;
+	width: 100%;
+	object-fit: cover;
+}
 
+.home_imag {
+	flex-wrap: wrap;
+	margin-top: 50px;
+}
 
+.home_imag {
+	flex-wrap: wrap;
+}
 
+.hover-image {
+	width: 100%;
+	transition: transform 0.3s ease, opacity 0.3s ease;
+}
 
+.image-container{
+	position: relative;
+	width: 350px;;
+	height: 210px;
+	margin: 0 auto;
+	margin-top:50px;
+}
 
-
-
-
-
-
-
-
+.hover-text {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: white;
+	background-color: transparent;
+	opacity: 0;
+	transition: opacity 0.3s ease;
+}
+.image-container:hover .hover-image {
+	transform: scale(1.1);
+	opacity: 0.7;
+}
+.food-item {
+	margin-right: 20px;
+}
+.image {
+	width: 100px;
+	height: 100px;
+	object-fit: cover;
+}

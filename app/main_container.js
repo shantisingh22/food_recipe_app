@@ -32,7 +32,7 @@ function MainContainer() {
                                     <img src={category.strCategoryThumb} alt={category.strCategory} className="card-img-top hover-image" />
                                 </div>
                                 <div className="body text-center">
-                                    <h5 className="title">{category.strCategory}</h5>
+                                    <h3 className="title"><b>{category.strCategory}</b></h3>
                                     <p>{truncatedDescription}</p>
                                 </div>
                             </div>

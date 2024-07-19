@@ -32,9 +32,4 @@ function SignInForm({ onSignIn }) {
         </div>
     );
 }
-<<<<<<< Updated upstream
-export default SignInForm;  
-
-=======
 export default SignInForm;
->>>>>>> Stashed changes

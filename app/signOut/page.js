@@ -1,14 +1,13 @@
-// ExampleComponent.js
+
 import React from 'react';
-import { useNavigation } from 'next/navigation'; // Import useNavigation from next/navigation
+import { useNavigation } from 'next/navigation'; 
 
 const SignOut = () => {
-    const navigation = useNavigation(); // Initialize useNavigation
-
+    const navigation = useNavigation(); 
     const handleSignOut = () => {
-        // Simulate sign-out logic (e.g., clear session, update state)
+       
         console.log("User signed out");
-        // Navigate to sign-in page after sign-out
+  
         navigation.navigate('/signIn');
     };
 

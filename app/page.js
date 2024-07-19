@@ -1,22 +1,14 @@
-<<<<<<< Updated upstream
 "use client";
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'js-cookie';
 import SignInForm from './singIn/page';
-=======
-"use client"
-import React from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
->>>>>>> Stashed changes
 import Foodlist from './foodList';
 import ImageCarousel from './header_slider';
 import MainContainer from './main_container';
 import Header from './header';
-import SignOutForm from './signOut/page'; 
 
 const Page = () => {
-<<<<<<< Updated upstream
     const [isSignedIn, setIsSignedIn] = useState(false);
 
     useEffect(() => {
@@ -48,14 +40,6 @@ const Page = () => {
             ) : (
                 <SignInForm onSignIn={handleSignIn} />
             )}
-=======
-    return (
-        <div className='container'>
-            <Header />  
-            <Foodlist />
-            <ImageCarousel />
-            <MainContainer />
->>>>>>> Stashed changes
         </div>
     );
 }

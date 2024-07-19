@@ -4,7 +4,6 @@ import Header from "../header";
 import ImageCarousel from "./imgeCarousel";
 import RecipeList from "./recipeList";
 import InputBox from "./inputBox"
-// import"../globals.css";
 import "./style.css";
 
 

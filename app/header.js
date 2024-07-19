@@ -23,8 +23,3 @@ function Header({ onSignOut }) {
 	);
 }
 export default Header;
-
-
-
-
-

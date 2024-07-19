@@ -1,35 +1,35 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Niconne&display=swap');
-body {
-    /* background-image: url("/backgroundcolor.jpg"); */
-    background-size: cover;
-    background-position: center;
-}
 
 .signin-container {
     height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    background-image: url("/backgroundcolor.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .signin-card {
     width: 500px;
     height: 600px;
-    background-color: transparent; 
+    background-color: transparent;
     border-radius: 10px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 20px; 
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+.form-container { 
+    background-color: rgba(255, 255, 255, 0.5); 
+    padding: 20px;
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
 .text-center {
     margin-bottom: 20px;
-    /* color:red; */
-    /* font-family: 'Niconne'; */
     font-weight: normal;
     font-size: 24px;
 }
@@ -47,6 +47,7 @@ body {
     background-color: #ff5252;
     box-shadow: 0 4px 8px black;
 }
+
 .signup-option p {
     font-size: 24px;
     color: black;

@@ -4,11 +4,9 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'js-cookie';
 import SignInForm from './singIn/page';
 import Foodlist from './foodList';
-import DummyData from './recipeData';
 import ImageCarousel from './header_slider';
 import MainContainer from './main_container';
 import Header from './header';
-import SignOutForm from './signOut/page'; 
 
 const Page = () => {
     const [isSignedIn, setIsSignedIn] = useState(false);

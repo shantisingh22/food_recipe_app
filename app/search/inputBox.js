@@ -5,9 +5,10 @@ import "./style.css";
 function InputBox({ fetchRecipes, searchRecipes, setSearchRecipes, handleSearchClear }) {
     return (
         <>
-            <h1>
-                Recipes <img src="chocolate-cake.png" style={{ width: "120px", height: "100px" }} alt="Chocolate Cake" />
+            <div className="recipesText"> 
+                <h1> Recipes Search ....
             </h1>
+            </div>
             <div className="inputBox">
                 <input
                     type="text"

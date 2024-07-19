@@ -1,3 +1,4 @@
+
 body {
 	background: whitesmoke;
 	margin:0px;
@@ -34,6 +35,17 @@ body {
 	align-items: center;
 	margin-right: 20px;
 	text-decoration: none;
+	color: inherit;
+	width:170px;
+	font-weight: bold;
+}
+.signout{
+	display: flex;
+	align-items: center;
+	margin-right: 20px;
+	text-decoration: none;
+	background-color:white;
+	border: none;
 	color: inherit;
 	width:170px;
 	font-weight: bold;

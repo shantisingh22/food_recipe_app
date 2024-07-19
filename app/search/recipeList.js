@@ -49,7 +49,6 @@ function RecipeList({ recipes }) {
                                         &#9733;
                                     </span>
                                 ))}
-                                <span className="rating-value">({rating})</span>
                             </div>
                         </li>
                     );

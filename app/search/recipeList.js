@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from 'react';
 import Pagination from './pagination';
-import "./style.css";
+import "../globals.css";
 
 function getRandomRating() {
     return (Math.random() * 5).toFixed(1); 

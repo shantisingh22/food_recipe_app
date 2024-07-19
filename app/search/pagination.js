@@ -1,5 +1,5 @@
 import React from 'react';
-import "./style.css";
+import "../globals.css";
 
 function Pagination({ handlePrevious, handleNext, currentPage, totalPages }) {
     return (

@@ -4,7 +4,7 @@ import Header from "../header";
 import ImageCarousel from "./imgeCarousel";
 import RecipeList from "./recipeList";
 import InputBox from "./inputBox"
-import "./style.css";
+import "../globals.css";
 
 
 function Page() {

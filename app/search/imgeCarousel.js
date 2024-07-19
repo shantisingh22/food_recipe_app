@@ -1,6 +1,7 @@
 import { Carousel } from "react-bootstrap";
 import DummyData from "./DammayDataSearchbar";
-import "./style.css";
+// import "./style.css";
+import "../globals.css";
 
 const ImageCarousel = function () {
     const itemsPerSlide = 7;

@@ -15,4 +15,10 @@ const Foodlist = () => {
         </div>
     );
 }
+<<<<<<< Updated upstream
 export default Foodlist;
+=======
+
+export default Foodlist;
+
+>>>>>>> Stashed changes

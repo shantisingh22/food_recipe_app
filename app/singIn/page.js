@@ -6,7 +6,6 @@ function SignInForm({ onSignIn }) {
         event.preventDefault();
         onSignIn();
     };
-
     return (
         <div className="signin-container d-flex justify-content-center align-items-center">
             <div className="signin-card card p-4">
@@ -33,5 +32,9 @@ function SignInForm({ onSignIn }) {
         </div>
     );
 }
+<<<<<<< Updated upstream
 export default SignInForm;  
 
+=======
+export default SignInForm;
+>>>>>>> Stashed changes

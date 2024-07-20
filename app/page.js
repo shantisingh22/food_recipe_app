@@ -2,7 +2,6 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'js-cookie';
-import SignInForm from './singIn/page';
 import Foodlist from './foodList';
 import ImageCarousel from './header_slider';
 import MainContainer from './main_container';
@@ -43,5 +42,4 @@ const Page = () => {
         </div>
     );
 }
-
 export default Page;

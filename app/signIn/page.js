@@ -1,7 +1,8 @@
+"use client";
 import React from 'react';
 import './style.css';
 
-function SignInForm({ onSignIn }) {
+function Page() {
     const handleSubmit = (event) => {
         event.preventDefault();
         onSignIn();
@@ -32,4 +33,4 @@ function SignInForm({ onSignIn }) {
         </div>
     );
 }
-export default SignInForm
+export default Page;

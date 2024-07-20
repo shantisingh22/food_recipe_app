@@ -1,11 +1,11 @@
 "use client";
 import React from 'react';
-import './style.css';
+import '../login.css';
 
-function Page() {
+function Login({handleLogin}) {
     const handleSubmit = (event) => {
         event.preventDefault();
-        onSignIn();
+        handleLogin();
     };
     return (
         <div className="signin-container d-flex justify-content-center align-items-center">
@@ -33,4 +33,4 @@ function Page() {
         </div>
     );
 }
-export default Page;
+export default Login;

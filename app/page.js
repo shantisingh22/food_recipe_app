@@ -2,10 +2,11 @@
 import React, { useState, useEffect } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Cookies from 'js-cookie';
-import Foodlist from './foodList';
-import ImageCarousel from './header_slider';
-import MainContainer from './main_container';
-import Header from './header';
+import Login from './Components/Login';
+import Foodlist from './Components/FoodList';
+import ImageCarousel from './Components/Header_slider';
+import MainContainer from './Components/Main_container';
+import Header from './Components/Header';
 
 const Page = () => {
     const [isSignedIn, setIsSignedIn] = useState(false);
@@ -31,13 +32,13 @@ const Page = () => {
         <div className='container'>
             {isSignedIn ? (
                 <>
-                    <Header  onSignOut={handleSignOut}/>
+                    <Header  handleLogout={handleSignOut}/>
                     <Foodlist />
                     <ImageCarousel />
                     <MainContainer />
                 </>
             ) : (
-                <SignInForm onSignIn={handleSignIn} />
+                <Login handleLogin={handleSignIn} />
             )}
         </div>
     );

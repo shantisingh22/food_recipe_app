@@ -1,6 +1,6 @@
 "use client";
 import React, { useState } from "react";
-import Header from "../header";
+import Header from "../Components/Header";
 import ImageCarousel from "./imgeCarousel";
 import RecipeList from "./recipeList";
 import InputBox from "./inputBox"

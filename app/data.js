@@ -1,4 +1,4 @@
-const DummyData = [
+const recipes = [
   {
     id: 1,
     name: "Spaghetti",
@@ -62,4 +62,4 @@ const DummyData = [
     },
     
 ];
-export default DummyData;
+export default recipes;

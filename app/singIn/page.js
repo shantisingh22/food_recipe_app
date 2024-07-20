@@ -1,6 +1,5 @@
 import React from 'react';
 import './style.css';
-// import "../globals.css"
 
 function SignInForm({ onSignIn }) {
     const handleSubmit = (event) => {

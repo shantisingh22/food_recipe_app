@@ -15,7 +15,7 @@ function Header({ onSignOut }) {
 						<img src="home.png" alt="Cart Icon" />Home</a>
 					<button onClick={onSignOut} className="nav_item signout">
 						<img src="signin_logo.png" alt="Sign In Icon" />
-						Sign In
+						SIGN-OUT
 					</button>
 				</div>
 			</div>

@@ -1,6 +1,5 @@
 "use client";
 import React from "react";
-import "../globals.css";
 
 function InputBox({ fetchRecipes, searchRecipes, setSearchRecipes, handleSearchClear }) {
     return (

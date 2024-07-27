@@ -22,4 +22,4 @@ function Header({ handleLogout }) {
 		</div>
 	);
 }
-export default Header;
+export default Header;`	`
